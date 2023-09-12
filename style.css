@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.note-modal {
+  display: none;
+  background-color: gray;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  gap: 2rem;
+  width: 30rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.note-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.note-modal form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+}
+.note-modal textarea {
+  font-size: 1.1rem;
+}
+.note-modal input[type="submit"] {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+button:hover,
+input[type="submit"]:hover {
+  opacity: 0.6;
+}
+
+.note-button {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: blue;
+  font-size: 2rem;
+  color: white;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.single-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: left;
+  width: 25rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.single-note p {
+  font-size: 1.2rem;
+}
+.single-note .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.single-note .buttons button {
+  background-color: blue;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+form.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edit-form input {
+  font-size: 1.2rem;
+}
+
+.edit-form input[type="submit"] {
+  background: blue;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
+  .note-modal {
+    left: 0.2rem;
+    right: 0.2rem;
+    width: 96vw;
+    overflow: hidden;
+  }
+}
